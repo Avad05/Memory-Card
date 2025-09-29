@@ -55,7 +55,7 @@ export default function Render() {
               width={250}
               height={300}
               onClick={() => handleClick(img.id)}
-              style={{ cursor: "pointer", border: "0px solid black",backgroundColor:"red", borderRadius:"5px" }}
+              style={{ cursor: "pointer", border: "0px solid black",backgroundColor:"orange", borderRadius:"5px" }}
               onError={(e) => e.target.style.display = "none"} // hide if fails
 
             />
