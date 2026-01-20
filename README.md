@@ -1,19 +1,96 @@
-# React + Vite
+# 🧠 Memory Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **Memory Card Game** built with **React** where players must avoid clicking the same image more than once.
+The game challenges memory by **shuffling cards after every click**, and images are fetched dynamically from a **third-party API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎮 How the Game Works
 
-## React Compiler
+* A set of image cards is displayed
+* Clicking a **new image** increases the score
+* Clicking the **same image again** resets the score to **0**
+* Cards **shuffle after every click**
+* The goal is to achieve the highest possible score without repeating clicks
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* Dynamic image fetching from a third-party API
+* Real-time score tracking
+* High score tracking
+* Card shuffle logic after every interaction
+* Responsive and interactive UI
+* State-driven gameplay using React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
 
+## 🛠 Tech Stack
+
+* **Frontend:** React
+* **State Management:** React Hooks (`useState`, `useEffect`)
+* **API:** Third-party image API
+* **Logic:** Shuffle algorithm for cards
+* **Styling:** CSS / CSS Modules 
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── components/
+│   ├── Card.jsx
+│   ├── ScoreBoard.jsx
+├── services/
+│   └── api.js
+├── utils/
+│   └── shuffle.js
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 🧑‍💻 Getting Started
+
+### Prerequisites
+
+* Node.js (v16+ recommended)
+* npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/memory-card-game.git
+cd memory-card-game
+npm install
+npm run dev
+```
+
+---
+
+## 📌 Learning Outcomes
+
+* Managing complex state in React
+* Implementing game logic with hooks
+* Fetching and handling API data
+* Writing efficient shuffle algorithms
+* Building interactive UI experiences
+
+---
+
+## 🔮 Future Improvements
+
+* Difficulty levels
+* Timer-based gameplay
+* Animations and transitions
+* Persistent high scores
+* Mobile-first enhancements
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
